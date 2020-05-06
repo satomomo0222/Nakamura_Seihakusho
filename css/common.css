@@ -8,6 +8,10 @@
   70% {transform: translateY(0px) scale(1.2,0.8);}
   100% {transform: translateY(0px);}
 }
+@keyframes key8{
+  0% {transform: scale(1);}
+  100% {transform: scale(1.2);}
+}
 /* buy */
 @keyframes key2{
   0% {padding-top: 12px;}
