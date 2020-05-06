@@ -1,0 +1,219 @@
+
+/* 前提 */
+*{
+  list-style: none;
+}
+.body{
+min-width: 1155px;  
+background-color: white;
+}
+* a,p{
+  font-family: 'Playfair Display', serif;
+}
+
+.wrapper{
+  width:100%;
+}
+/* ----------header---------- */
+header{
+  position: relative;
+  min-width: 1155px;
+}
+/* -----slide----- */
+.slides{
+  position: relative;
+  background-color: white;
+}
+.slide-list img{
+  width:100%;
+  min-width: 1155px;
+  height:100vh;
+  z-index: 0;
+}
+/* -----topleft----- */
+.header-topleft{
+  position: absolute;
+  Top:100px;
+  Left:100px;
+  z-index: 1;
+}
+.header-topleft p{
+  font-size:12px;
+  color:white;
+  line-height: 20px;
+  font-weight: lighter;
+  opacity:0.8;
+}
+.header-topleft p:first-of-type{
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+/* -----title----- */
+.header-title{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+.header-title img{
+  width:100px;
+}
+/* -----nav----- */
+nav{
+  writing-mode: vertical-rl;
+  position: absolute;
+  top:150px;
+  right:100px;
+  color:white;
+}
+nav ul li{
+  font-size:16px;
+  font-weight: lighter;
+}
+nav a:hover{
+  color:white;
+  animation: key2 .1s ease forwards;
+}
+nav a{
+  position: relative;
+  display: inline-block; /*←これがないとpaddingが効かなかった*/
+  padding:12px;
+  animation: key3 .8s ease forwards;
+}
+nav a:before{
+  content:"";
+  width:16px;
+  height:1px;
+  margin-bottom:10px;
+  background: white;
+  z-index: 1;
+  position: absolute;
+  top:0%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+/* -----scroll----- */
+.scroll{
+  position: absolute;
+  bottom:70px;
+  left:100px;
+  padding:0 10px 50px 10px;
+  border-left: 1px solid white;
+  z-index: 1;
+  animation: key6 .8s ease forwards;
+}
+.scroll:hover{
+  animation: key7 .1s ease forwards;
+}
+.scroll img{
+  width:15px;
+}
+.scroll:after{
+  content:"";
+  height:70px;
+  width:1px;
+  background:black;
+  position: absolute;
+  left:-1px;
+  top:100%;
+  display: block;
+  z-index: 2;
+}
+/* -----news----- */
+.news{
+  position: absolute;
+  bottom:0;
+  left:0;
+  padding-left:150px;
+  width:50%;
+  height:70px;
+  background-color: white;
+  display:flex;
+  align-items: flex-end;
+  color:black;
+  font-size: 12px;
+  line-height: 20px;
+}
+.news dl{
+  display: flex;
+  flex-wrap: wrap;
+}
+.news dt:after{
+  content:"/";
+  margin:0 10px;
+}
+.news-list{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.news a:hover{
+  color:black;
+}
+.news-list a:hover em::after{
+  animation: key4 .3s ease forwards;
+}
+.news-list li a em{
+  position: relative;
+}
+.news-list em::after{
+  display: inline-block;
+  position: absolute;
+  bottom:0;
+  left:0;
+  content: "";
+  height:1px;
+  width:100%;
+  background:black;
+  animation: key5 .3s ease forwards;
+}
+
+/* ----------buy,button---------- */
+.buy,button{
+  width:70px;
+  height:70px;
+  position:fixed;
+  top:0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.buy{
+  right:70px;
+  background-color:black;
+  color:white;
+}
+.buy:hover{
+  color:white;
+}
+.buy .bounce{
+  animation: key1 1.5s ease;
+}
+.buy span:first-child::before{
+  color: #fff;
+  content: "\f290";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+.buy span:first-child{
+  padding-bottom: 5px;
+}
+.buy span:last-child{
+  font-size: 14px;
+  font-weight: lighter;
+}
+button{
+  right:0px;
+  background-color: white;
+}
+button span{
+  display: block;
+  height:1px;
+  width:28px;
+  background:black;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left:-14px;
+}

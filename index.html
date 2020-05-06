@@ -4,31 +4,94 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>株式会社中村製箔所|金沢箔の製造元|金箔の復元</title>
-
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="reset.css">
-  <script src="jquery-3.5.0.min.js"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- slick -->
+  <link rel="stylesheet" href="css/slick.css" />
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <!-- jquery -->
+  <script src="js/jquery-3.5.0.min.js"></script>
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
+
+
+
+
 <body>
   <div class="wrapper">
-    <header></header>  
+    <header>
+      <div class="header-topleft">
+        <img class="header-logo" src="img/logo.svg">
+        <p>Nakamura Seihakusho, Inc.</p>
+        <p>Japanese gold leaf<br>
+          Modernizing "Kanazawa-haku"</p>
+      </div>
+      <div class="slides">
+        <ul class="slide-list">
+          <li><img src="img/slide01.jpg"></li>
+          <li><img src="img/slide02.jpg"></li>
+          <li><img src="img/slide03.jpg"></li>
+          <li><img src="img/slide04.jpg"></li>
+        </ul>
+      </div>
+      <div class="header-title">
+        <img src="img/slide-title.png">
+      </div>
+      <nav class="navi">
+        <ul>
+          <li><a href="#"><span class="list">中村製箔所について</span></a></li>
+          <li><a href="#"><span class="list">金沢の金箔</span></a></li>
+          <li><a href="#"><span class="list">製品紹介</span></a></li>
+          <li><a href="#"><span class="list">お問い合わせ</span></a></li>
+          <li><a href="#"><span class="list">お知らせ</span></a></li>
+        </ul>
+      </nav>
+      <a href="#" class="scroll">
+        <img src="img/scroll.png">
+      </a>
+      <div class="news">
+        <dl>
+          <dt>お知らせ</dt>
+          <dd>
+            <ul class="news-list">
+              <li>
+                <a href="#">
+                  <time datetime="2020-04-09">2020.04.09</time>
+                  <em>ホームページをリニューアルいたしました</em>
+                </a>
+              </li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+      
+    </header>  
+
+
+
+
+
     <div class="content"></div>
     <footer></footer>
     <nav></nav>
-    <a href="#" class="buy"></a>
-    <button class="gmenu" type="button"></button>
+    <a href="#" class="buy" id="buy">
+      <span id="bounce"></span>
+      <span>BUY</span>
+    </a>
+    <button class="gmenu" type="button">
+      <span></span>
+      <span></span>
+    </button>
   </div>
 
-
-
-
-
-
-
-
-
-
-
-  <script src="script.js"></script>
+  <!-- jquery -->
+  <script src="js/script.js"></script>
+  <!-- slick -->
+  <script src="js/slick.min.js"></script>
 </body>
 </html>

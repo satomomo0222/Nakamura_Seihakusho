@@ -1,0 +1,37 @@
+/* slide */
+@keyframes key1{
+  0% {transform: translateY(0px);}
+  30% {transform: translateY(0px) scale(1.2,0.8);}
+  35% {transform: scale(1,1);}
+  50% {transform: translateY(-12px);}
+  65% {transform: scale(1,1);}
+  70% {transform: translateY(0px) scale(1.2,0.8);}
+  100% {transform: translateY(0px);}
+}
+/* buy */
+@keyframes key2{
+  0% {padding-top: 12px;}
+  100% {padding-top: 32px;}
+}
+@keyframes key3{
+  0% {padding-top: 32px;}
+  100% {padding-top: 12px;}
+}
+/* news */
+@keyframes key4{
+  0% {left:0; width:100%;}
+  100% {left:100%; width:0;}
+}
+@keyframes key5{
+  0% {width:0;}
+  100% {width:100%;}
+}
+/* scroll */
+@keyframes key6{
+  0% {padding-bottom: 30px; padding-top: 20px;}
+  100% {padding-bottom: 50px; padding-top: 0;}
+}
+@keyframes key7{
+  0% {padding-bottom: 50px; padding-top: 0;}
+  100% {padding-bottom: 30px; padding-top: 20px;}
+}
