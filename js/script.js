@@ -30,4 +30,23 @@ $(function(){
   },function(){
     $("#bounce").removeClass("bounce");
   });
+
+  $('.product-slide-list').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    dots: false,
+    infinite: true,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    pauseOnDotsHover: false
+  });
+  $("#product-next-btn").click(function(){
+    $('.product-slide-list').slick('slickNext');
+  });
+  $("#product-prev-btn").click(function(){
+    $('.product-slide-list').slick('slickPrev');
+  });
 });

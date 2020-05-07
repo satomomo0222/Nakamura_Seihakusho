@@ -1,4 +1,4 @@
-/* slide */
+/* buy */
 @keyframes key1{
   0% {transform: translateY(0px);}
   30% {transform: translateY(0px) scale(1.2,0.8);}
@@ -8,11 +8,7 @@
   70% {transform: translateY(0px) scale(1.2,0.8);}
   100% {transform: translateY(0px);}
 }
-@keyframes key8{
-  0% {transform: scale(1);}
-  100% {transform: scale(1.2);}
-}
-/* buy */
+/* nav */
 @keyframes key2{
   0% {padding-top: 12px;}
   100% {padding-top: 32px;}
@@ -38,4 +34,18 @@
 @keyframes key7{
   0% {padding-bottom: 50px; padding-top: 0;}
   100% {padding-bottom: 30px; padding-top: 20px;}
+}
+/* slide */
+@keyframes key8{
+  0% {transform: scale(1.1);}
+  100% {transform: scale(1.3);}
+}
+/* movie */
+@keyframes key9{
+  0% {transform:scale(1);}
+  100% {transform:scale(1.1);}
+}
+@keyframes key10{
+  0% {transform:scale(1.1);}
+  100% {transform:scale(1);}
 }
